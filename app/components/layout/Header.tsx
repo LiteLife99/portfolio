@@ -12,7 +12,7 @@ const Header = () => {
   const isAvailable = usePortfolioStore((state) => state.isAvailable)
 
   const navItems = [
-    { name: 'About', href: '/', icon: User },
+    { name: 'About', href: '/about', icon: User },
     { name: 'Projects', href: '/projects', icon: Folder },
     { name: 'Experience', href: '/experience', icon: Briefcase },
     { name: 'Blog', href: '/blog', icon: BookOpen },

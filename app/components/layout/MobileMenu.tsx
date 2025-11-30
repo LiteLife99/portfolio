@@ -11,7 +11,7 @@ const MobileMenu = () => {
   const pathname = usePathname()
 
   const navItems = [
-    { name: 'About', href: '/', icon: User },
+    { name: 'About', href: '/about', icon: User },
     { name: 'Projects', href: '/projects', icon: Folder },
     { name: 'Experience', href: '/experience', icon: Briefcase },
     { name: 'Blog', href: '/blog', icon: BookOpen },

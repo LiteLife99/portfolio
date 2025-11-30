@@ -15,12 +15,14 @@ const Hero = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="border-2 border-terminal-green rounded p-8 mb-16 max-w-4xl"
+        className="border-2 border-terminal-green rounded p-4 sm:p-8 mb-16 max-w-4xl"
       >
-        <pre className="text-terminal-green text-[10px] sm:text-xs md:text-sm overflow-x-auto whitespace-pre font-bold leading-tight text-center">
-          {asciiArt}
-        </pre>
-        <p className="text-terminal-green text-center mt-6 text-base">
+        <div className="overflow-x-auto sm:overflow-x-visible">
+          <pre className="text-terminal-green text-[8px] sm:text-[10px] md:text-xs lg:text-sm overflow-x-auto whitespace-pre font-bold leading-tight text-center">
+            {asciiArt}
+          </pre>
+        </div>
+        <p className="text-terminal-green text-center mt-4 sm:mt-6 text-sm sm:text-base">
           Senior Software Engineer&apos;s Portfolio
         </p>
       </motion.div>

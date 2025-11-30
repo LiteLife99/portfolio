@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/app/components/layout/Header'
 import Footer from '@/app/components/layout/Footer'
+import StartupLoader from '@/app/components/StartupLoader'
 
 export const metadata: Metadata = {
   title: 'Arnab Mukherjee | Senior Software Engineer',
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen flex flex-col">
+        <StartupLoader />
         <Header />
         <main className="flex-1 pt-14">
           {children}
